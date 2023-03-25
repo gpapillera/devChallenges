@@ -38,7 +38,7 @@ html {
 
 
   .main__background {
-    padding: 4.1em 0;
+    padding: 4em 0;
   }
 
   .not-found {
@@ -99,15 +99,19 @@ html {
       gap: .7em;
     }
 
+    .main__background {
+      padding: 4.1em 0;
+    }
+
     .main__image {
       width: clamp(300px, 45%, 450px);
       align-self: flex-start;
       margin: 0;
-      border: orange 1px solid;
+      
     }
   
     .main__text {
       width: clamp(200px, 50%, 550px);
-      border: red 1px solid;
+      
     }
   }
