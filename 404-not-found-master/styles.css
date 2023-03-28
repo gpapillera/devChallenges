@@ -23,7 +23,9 @@ html {
   body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
+    min-width: 300px;
+    scroll-behavior: smooth;
   }
 
   img {
@@ -53,7 +55,7 @@ html {
   }
 
   .main__text h1 {
-    font-size: clamp(1rem, 12vw, 2.4rem);
+    font-size: clamp(1.9rem, 12.5vw, 2.4rem);
     line-height: 1.1em;
   }
 
@@ -74,7 +76,7 @@ html {
   }
 
   a.main__button:hover {
-    opacity: .9;
+    opacity: .8;
   }
 
   /* Footer */
@@ -93,6 +95,12 @@ html {
   }
 
   @media (min-width: 40em) {
+     body {   /* Solution I see for Footer stay below */
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
     .col {
       display: flex;
       justify-content: space-between;
